@@ -1,1 +1,1 @@
-Learning how to debug codes
+Learning how to debug codes in a professional way
