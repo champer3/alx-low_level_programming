@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-int main (void)
+int main(void)
 {
 int i;
 char p[] = "Holberton";
