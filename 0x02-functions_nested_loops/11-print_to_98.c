@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * print_alphabet - Print the alphabet in lowercase.
+ * print_to_98 - prints all natural numbers
  *
+ * @n: input number
  * Return: void.
  */
 
