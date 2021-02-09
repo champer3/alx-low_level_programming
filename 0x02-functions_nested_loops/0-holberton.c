@@ -1,5 +1,11 @@
 #include "holberton.h"
 
+/**
+ * main - Print the word "Holberton"
+ *
+ * Return: Always0 (success)
+ */
+
 int main(void)
 {
 int i;
