@@ -1,7 +1,8 @@
 #include "holberton"
 
 /**
-* jack_butcher
+* jack_bauer - prints every minute of the day
+*
 * Return: no return
 */
 void jack_bauer(void)
