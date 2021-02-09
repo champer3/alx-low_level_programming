@@ -1,10 +1,13 @@
 #include "holberton.h"
 
 /**
- * print_alphabet - Print the alphabet in lowercase.
- *
- * Return: void.
- */
+* _abs - gives the absolute value
+* of an integer.
+*
+* @n: input number as an integer.
+*
+* Return: absolute value
+*/
 
 int _abs(int n)
 {
