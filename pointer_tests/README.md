@@ -1,0 +1,1 @@
+Learning the fundamentals of Pointers and Arrays using the concept material given by ALX SES
