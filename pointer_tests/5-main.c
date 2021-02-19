@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void modify_my_param(int *m)
+void modif_my_param(int *m)
 {
 printf("Value of 'm' is: %p\n", m);
 printf("Address of 'm' is: %p\n", &m);
