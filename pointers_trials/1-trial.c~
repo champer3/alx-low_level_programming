@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int n=3;
+
+  n=5;
+  printf("the value of n = %d\n", n);
+}
