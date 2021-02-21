@@ -2,9 +2,12 @@
 
 int _strlen(char *s)
 {
-  int i;
-  for (i = 0, *s != '\0'; i++; s++)
-    {
-      printf("%d\n", i);
-    }return(0);
+int len = 0;
+
+while (*s != '\0')
+{
+s++;
+len++;
+}
+return (len);
 }
