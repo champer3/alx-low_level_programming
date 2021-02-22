@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * print_chessboard - a function that prints the chessboard
  * @a: 2d array of chars
