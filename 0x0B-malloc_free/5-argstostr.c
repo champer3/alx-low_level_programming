@@ -1,43 +1,57 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * *argstostr - concatenates all arguements to the program
- * @ac: arguement count
- * @av: pointer to arguements
- * Return: pointer to new space in memory or null
+ * _strlen - returns the length of the string
+ * @s: input string to count
+ * Description: returns the length of a given string
+ * Return: length of string as int
+ **/
+int _strlen(char *s)
+{
+int i;
+
+for (i = 0; s[i] != '\0'; i++)
+;
+return (i + 1);
+}
+/**
+ * argstostr - concatenates all arguments of program
+ * @ac: number of arguments
+ * @av: arguments, pointer to strings
+ * Description: concatenate all args to one string, separated by \n
+ * Return: pointer to string, NULL if fails
  **/
 char *argstostr(int ac, char **av)
 {
-char *strDup;
-int i, j, k, size;
+char *dest;
+unsigned int size, i, j, k;
 
-if (ac == 0 || av == NULL)
-return (NULL);
 size = 0;
-/* count the number of chars in each string */
-for (i = 0; i < ac; i++)
-{
-for (j = 0; av[i][j] != '\0'; j++)
-size++;
-size++;
-}
-size++;
-/* allocate memory for total number of chars and
- * new line for each word
- */
-strDup = malloc(sizeof(char) * size);
-if (strDup == NULL)
-return (NULL);
 k = 0;
-for (i = 0; i < ac; i++)
+
+if (ac <= 0 || av == NULL)
+return (NULL);
+
+for (i = 0; i < (unsigned int)ac; i++)
+{
+size += _strlen(av[i]);
+}
+
+dest = (char *)malloc((size + 1) * sizeof(char));
+
+if (dest == NULL)
+return (NULL);
+
+for (i = 0; i < (unsigned int)ac; i++)
 {
 for (j = 0; av[i][j] != '\0'; j++)
 {
- 
-strDup[k++] = av[i][j];
+dest[k] = av[i][j];
+k++;
 }
-strDup[k++] = '\n';
+dest[k] = '\n';
+k++;
 }
-strDup[k] = '\0';
-return (strDup);
+dest[k] = '\0';
+return (dest);
 }
