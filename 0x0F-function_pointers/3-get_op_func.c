@@ -1,6 +1,7 @@
 #include "function_pointers.h"
 #include "3-calc.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
   * get_op_func - determiens what operator was passed in
   * and calls the relevant function
