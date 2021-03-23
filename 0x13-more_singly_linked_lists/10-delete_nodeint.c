@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
   * delete_nodeint_at_index - deletes node at index
   * @head: double pointer to head
