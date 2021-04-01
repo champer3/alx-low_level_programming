@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "holberton.h"
 
 int main(void)
 {
@@ -6,7 +6,7 @@ int main(void)
   char p[] = "holberton";
 
   for (i=0; i<9; i++)
-   _putchar("%c", p[i]);
+   _putchar(p[i]);
   _putchar('\n');
   return(0);
 
