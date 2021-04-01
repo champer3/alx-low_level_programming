@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int i;
+  char p[] = "holberton";
+
+  for (i=0; i<9; i++)
+    printf("%c", p[i]);
+  printf('\n');
+  return(0);
+
+}
